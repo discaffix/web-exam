@@ -146,6 +146,30 @@ main {
     }
 }
 
+#contact {
+ 
+
+    .item-2 {
+        flex-grow: 3;
+        display: flex;
+        justify-content: space-evenly;
+            
+        section {
+
+            height: auto;
+            width: 25%;
+            border: 1px solid #ecebeb;
+            border-radius: 3px;
+            line-height: 25px;
+
+
+            border-radius: 1px solid gray;
+            background-color: #ecebeb;
+        }
+    }
+}
+
+
 
 // -------------- footer -------------- // 
 footer {
@@ -164,7 +188,6 @@ footer {
         height: 55px;
         width: 250px;
         position: relative;
-        flex-shrink: 3;
         flex-basis:  auto;
         margin-bottom: 25px;
         p {

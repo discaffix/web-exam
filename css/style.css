@@ -1,14 +1,17 @@
+/* line 6, ../open-source/web-exam/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
 }
 
+/* line 11, ../open-source/web-exam/scss/style.scss */
 body {
   font: 100% "roboto", sans-serif;
   color: #0C0C0C;
   background-color: #fff;
 }
 
+/* line 17, ../open-source/web-exam/scss/style.scss */
 #wrapper {
   width: 1280px;
   margin: 0 auto;
@@ -21,6 +24,7 @@ body {
   border-radius: 5px;
 }
 
+/* line 35, ../open-source/web-exam/scss/style.scss */
 header {
   grid-area: header;
   background-image: url("../img/background-image.png");
@@ -30,20 +34,24 @@ header {
   padding: 60px;
 }
 
+/* line 44, ../open-source/web-exam/scss/style.scss */
 header h1 {
   font-size: 55px;
 }
 
+/* line 50, ../open-source/web-exam/scss/style.scss */
 nav {
   grid-area: nav;
   border-bottom: 5px solid #F9F9F9;
 }
 
+/* line 54, ../open-source/web-exam/scss/style.scss */
 nav img {
   height: 85%;
   float: right;
 }
 
+/* line 59, ../open-source/web-exam/scss/style.scss */
 nav ul {
   margin: 0 auto;
   display: flex;
@@ -54,6 +62,7 @@ nav ul {
   width: 50%;
 }
 
+/* line 68, ../open-source/web-exam/scss/style.scss */
 nav ul li {
   list-style-type: none;
   display: inline;
@@ -62,6 +71,7 @@ nav ul li {
   margin-top: 38px;
 }
 
+/* line 75, ../open-source/web-exam/scss/style.scss */
 nav ul li a {
   text-decoration: none;
   font-size: 1.5em;
@@ -72,16 +82,19 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* line 84, ../open-source/web-exam/scss/style.scss */
 nav ul li a :visited {
   text-decoration: none;
   color: #0C0C0C;
 }
 
+/* line 89, ../open-source/web-exam/scss/style.scss */
 nav ul li .selected {
   border-bottom: 1px solid #61aaee;
   padding-bottom: 5px;
 }
 
+/* line 93, ../open-source/web-exam/scss/style.scss */
 nav ul li a:hover {
   text-decoration: none;
   border-bottom: none;
@@ -89,6 +102,7 @@ nav ul li a:hover {
   color: #61aaee;
 }
 
+/* line 105, ../open-source/web-exam/scss/style.scss */
 main {
   grid-area: main;
   display: flex;
@@ -98,10 +112,12 @@ main {
   padding-bottom: 100px;
 }
 
+/* line 116, ../open-source/web-exam/scss/style.scss */
 main .item-1, main .item-2, main .item-3 {
   flex: 1;
 }
 
+/* line 120, ../open-source/web-exam/scss/style.scss */
 main section {
   margin: 45px;
   height: 500px;
@@ -112,6 +128,7 @@ main section {
   line-height: 25px;
 }
 
+/* line 130, ../open-source/web-exam/scss/style.scss */
 main section img {
   width: 100%;
   display: block;
@@ -119,14 +136,35 @@ main section img {
   opacity: .9;
 }
 
+/* line 137, ../open-source/web-exam/scss/style.scss */
 main section h1 {
   padding: 10px 0 5px 0;
 }
 
+/* line 141, ../open-source/web-exam/scss/style.scss */
 main section p {
   padding: 10px 0 0 0;
 }
 
+/* line 152, ../open-source/web-exam/scss/style.scss */
+#contact .item-2 {
+  flex-grow: 3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 157, ../open-source/web-exam/scss/style.scss */
+#contact .item-2 section {
+  height: auto;
+  width: 25%;
+  border: 1px solid #ecebeb;
+  border-radius: 3px;
+  line-height: 25px;
+  border-radius: 1px solid gray;
+  background-color: #ecebeb;
+}
+
+/* line 175, ../open-source/web-exam/scss/style.scss */
 footer {
   background-color: #F9F9F9;
   border: 1px solid #ecebeb;
@@ -138,21 +176,23 @@ footer {
   justify-content: flex-start;
 }
 
+/* line 187, ../open-source/web-exam/scss/style.scss */
 footer section {
   height: 55px;
   width: 250px;
   position: relative;
-  flex-shrink: 3;
   flex-basis: auto;
   margin-bottom: 25px;
 }
 
+/* line 193, ../open-source/web-exam/scss/style.scss */
 footer section p {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
+/* line 199, ../open-source/web-exam/scss/style.scss */
 footer section a {
   display: block;
   text-decoration: none;
@@ -161,14 +201,17 @@ footer section a {
 }
 
 @media (max-width: 768px) {
+  /* line 212, ../open-source/web-exam/scss/style.scss */
   header {
     padding: 10px;
     text-align: center;
     background-image: none;
   }
+  /* line 217, ../open-source/web-exam/scss/style.scss */
   header p {
     display: none;
   }
+  /* line 221, ../open-source/web-exam/scss/style.scss */
   #wrapper {
     width: 100%;
     margin-top: 0px;
@@ -177,9 +220,11 @@ footer section a {
     grid-template-rows: 100px 50px auto auto;
     grid-template-areas: "header" "nav" "main" "footer";
   }
+  /* line 236, ../open-source/web-exam/scss/style.scss */
   main {
     flex-direction: column;
   }
+  /* line 240, ../open-source/web-exam/scss/style.scss */
   section {
     align-self: center;
     max-width: 500px;
@@ -187,6 +232,7 @@ footer section a {
 }
 
 @media (max-width: 1280px) {
+  /* line 248, ../open-source/web-exam/scss/style.scss */
   #wrapper {
     width: 100%;
     margin-top: 0px;
@@ -194,7 +240,10 @@ footer section a {
     border: none;
     flex-wrap: wrap;
   }
+  /* line 257, ../open-source/web-exam/scss/style.scss */
   nav ul {
     width: 60%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
