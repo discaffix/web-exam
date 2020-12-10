@@ -1,77 +1,110 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>YouzClothing</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        
+        <title>YouzClothing - billig netthandel av unike kleskonsepter!</title>
+
+        <!--SEO-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="YouzClothing, et nettsted der du kan kjøpe klær som passer!" /> 
+        <meta name="keywords" content="clothing,YouzClothing,Netthandel,Billig,Klær,Hurtig" />
+
+
+        <!--Open Graph med sample links-->
+        <meta property="og:title" content="YouzClothing - Kontakt oss" />
+        <meta property=”og:description content="et nettsted der du kan kjøpe klær som passer!"/>
+        <meta property="og:url" content="https://itstud.hiof.no/~andreeg/web-exam/kontakt.html" />
+        <meta property=”og:image” content=”https://itstud.hiof.no/~andreeg/web-exam/img/StorLogo.png”/>
+        <meta property=”og:image:alt” content="Logoen til YouzClothing"/>
+        <meta property=”og:type content=”company”/>
+
+        <!--Twitter-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://itstud.hiof.no/~andreeg/web-exam/img/StorLogo.png">
+        <meta name=”twitter:image:alt” content="Logoen til YouzClothing"/>
+        <meta name="twitter:description" content="et nettsted der du kan kjøpe klær som passer!">
+        <meta name="twitter:title" content="YouzClothing - Unique clothing store online!">
+        <meta property="twitter:url" content="https://itstud.hiof.no/~andreeg/web-exam/kontakt.html">
+
+        <!--links-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link rel="icon" href="img/LitenLogo.png" type="image/icon type">
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div id="wrapper">
-            <header>
+            <header itemscope itemtype="https://schema.org/Organization">
                 <!--Firma navn, slogan, og valgfritt bakgrunnsbilde-->    
-                <h1>YouzClothing</h1>  
-                <p>Unique clothing store online!</p>
+                <h1 itemprop="name">YouzClothing</h1>  
+                <p itemprop="slogan">Unique clothing store online!</p>
              </header>
-            <nav>
-                <img src="img/LitenLogo.png" alt="">
+             <nav>
+                <a tabindex="6" href="index.html"><img src="img/LitenLogo.png" alt="YouzClothing liten logo"></a>
                 <ul>
-                    <li><a href="index.html">Forside</a></li>
-                    <li><a class="selected" href="#">Kontakt</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Plan</a></li>
-                    <li><a href="#">SEO</a></li>
+                    <li><a tabindex="1" href="index.html">Forside</a></li>
+                    <li><a tabindex="2" class="selected" href="kontakt.html">Kontakt</a></li>
+                    <li><a tabindex="3" href="shop.html">Shop</a></li>
+                    <li><a tabindex="4" href="plan.html">Plan</a></li>
+                    <li><a tabindex="5" href="seo.html">SEO</a></li>
                 </ul>
             </nav>
       
               <main id="contact">
+                <!--Informasjon om YouzClothing-->
                 <section class="item-1">
-                   <h1>Tittel</h1>
-                    <p>YouzClothing</p>
+                   <section itemscope itemtype="https://schema.org/Store">
+                    <h3>Tittel</h1>
+                    <p itemprop="name">YouzClothing</p>
 
-                    <h1>Adresse</h1>
-                    <p>Adressevei 90E, 1783 Halden, Norge</p>
-                  </section>
-                  <section class="item-2">
-                    <section>
-                        <img src="img/KontaktPersoner/KontaktPerson1.png" alt="">
-                        <h1>Mona Mon Monaersen</h1>
+                    <h3>Adresse</h1>
+                    <p itemprop="address">Adressevei 90E, 1783 Halden, Norge</p>
+                   </section>
+                   
+                   <section itemscope itemtype="https://schema.org/Store">
+                    <h2>Kundeservice</h1><hr>
+                    <h3>Telefonnummer</h3>
+                    <p itemprop="telephone">88 88 88 88</p>
+                    <h3>Åpningstider</h3>
+                    <time itemprop="openingHours" datetime="Mo-Fri 10:00-16:30">Man-Fre 10:00 - 16:30</time>
+                   </section>
+                </section>
+
+                <!--Ansatte informasjon-->
+                <section class="item-2">
+                    <section itemscope itemtype="https://schema.org/Person">
+                        <img src="img/KontaktPersoner/KontaktPerson1.png" alt="Bilde av Mona Mon Monaersen">
+                        <h2 class="name"><span itemprop="givenName">Mona</span> <span itemprop="additionalName">Mon</span> <span itemprop="familyName">Monaersen</span></h2>
                         <hr class="main-hr">
-                        
                         <p><b>Stilling</b></p><hr class="person-hr">
-                        <p>CEO</p>
+                        <p itemprop="jobTitle">CEO</p>
                         <p><b>Telefonnummer</b></p><hr class="person-hr">
-                        <p>00 00 00 00</p>
+                        <p itemprop="telephone">00 00 00 00</p>
                         <p><b>Email</b></p><hr class="person-hr">
-                        <p><a href="mailto:MonaMonMonaersen@fakeemail.no">MonaMonMonaersen@fakeemail.no</a></p>
-                        
+                        <p><a tabindex="7" href="mailto:MonaMonMonaersen@fakeemail.no" itemprop="email">MonaMonMonaersen@fakeemail.no</a></p>       
                     </section>
-                    <section>
-                        <img src="img/KontaktPersoner/KontaktPerson1.png" alt="">
-                        <h1>Mona Mon Monaersen</h1>
+
+                    <section itemscope itemtype="https://schema.org/Person">
+                        <img src="img/KontaktPersoner/KontaktPerson2.png" alt="Bilde av Anders And Andersen">
+                        <h2 class="name"><span itemprop="givenName">Anders</span> <span itemprop="additionalName">And</span> <span itemprop="familyName">Andersen</span></h2>
                         <hr class="main-hr">
-                        
                         <p><b>Stilling</b></p><hr class="person-hr">
-                        <p>CEO</p>
+                        <p itemprop="jobTitle">Markedsfører</p>
                         <p><b>Telefonnummer</b></p><hr class="person-hr">
-                        <p>00 00 00 00</p>
+                        <p itemprop="telephone">00 00 00 00</p>
                         <p><b>Email</b></p><hr class="person-hr">
-                        <p><a href="mailto:MonaMonMonaersen@fakeemail.no">MonaMonMonaersen@fakeemail.no</a></p>
-                        
+                        <p><a tabindex="8" href="mailto:AndersAndAndersen@fakeemail.no" itemprop="email">AndersAndAndersen@fakeemail.no</a></p>       
                     </section>
-                    <section>  
-                        <img src="img/KontaktPersoner/KontaktPerson1.png" alt="">
-                        <h1>Mona Mon Monaersen</h1>
+
+                    <section itemscope itemtype="https://schema.org/Person">
+                        <img src="img/KontaktPersoner/KontaktPerson3.png" alt="Bilde av Børre Børresen">
+                        <h2 class="name"><span itemprop="givenName">Børre</span> <span itemprop="familyName">Børresen</span></h2>
                         <hr class="main-hr">
-                        
                         <p><b>Stilling</b></p><hr class="person-hr">
-                        <p>CEO</p>
+                        <p itemprop="jobTitle">Markedsfører</p>
                         <p><b>Telefonnummer</b></p><hr class="person-hr">
-                        <p>00 00 00 00</p>
+                        <p itemprop="telephone">00 00 00 00</p>
                         <p><b>Email</b></p><hr class="person-hr">
-                        <p><a href="mailto:MonaMonMonaersen@fakeemail.no">MonaMonMonaersen@fakeemail.no</a></p>
-                        
+                        <p><a tabindex="9" href="mailto:BørreBørresen@fakeemail.no" itemprop="email">BørreBørresen@fakeemail.no</a></p>       
                     </section>
                   </section>
         
@@ -79,23 +112,22 @@
       
               <footer>
                   <!--Kontakt informasjon og sosiale medier knapper-->
-            
-                <section>
-                    <h1>Kontakt Informasjon</h1>
-                    <p>88 88 88 88 </p>
+                <section itemscope itemtype="https://schema.org/Store">
+                    <h3>Kontakt Informasjon</h1>
+                    <p itemprop="telephone">88 88 88 88 </p>
+                </section>
+                <section itemscope itemtype="https://schema.org/Store">
+                    <h3>Åpningstider</h1>
+                    <time itemprop="openingHours" datetime="Mo-Fri 10:00-16:30">Man-Fre 10:00 - 16:30</time>
+                </section>
+                <section itemscope itemtype="https://schema.org/Store">
+                    <h3>Addresse</h1>
+                    <p itemprop="address">Adressevei 90E, 1783 Halden</p>
                 </section>
                 <section>
-                    <h1>Åpningstider</h1>
-                    <p>Man-Fre 10:00 - 16:30</p>
-                </section>
-                <section>
-                    <h1>Addresse</h1>
-                    <p>Adressevei 90E, 1783 Halden</p>
-                </section>
-                <section>
-                    <h1>Sosiale Medier</h1>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
+                    <h3>Sosiale Medier</h1>
+                    <a tabindex="10" href="#">Facebook</a>
+                    <a tabindex="11" href="#">Twitter</a>
                 </section>
               </footer>
         </div>

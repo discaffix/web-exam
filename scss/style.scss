@@ -49,7 +49,7 @@ header {
 // -------------- navigation -------------- // 
 nav {
     grid-area: nav;
-    border-bottom: 5px solid #F9F9F9;
+    border-bottom: 5px solid #ecebeb;
     
     img {
         height: 85%;
@@ -121,7 +121,7 @@ main {
         margin: 35px;
         height: auto;
         padding: 15px;
-        
+        position: relative;
         background-color: #F9F9F9;
         border: 1px solid #ecebeb;
         border-radius: 3px;
@@ -141,6 +141,43 @@ main {
         p {
             padding: 10px 0 0 0;
         }
+        .description {
+            margin-bottom: 50px;
+        }
+        .price-label {
+            float: left;
+            color: $primary-color;
+            padding: 0px;
+            margin: 0px;
+           
+            font-size: 2em;
+            font-weight: bold;
+    
+            position: absolute;
+            
+            bottom: 20px;
+            left: 10px;
+        }
+
+        .buy-label {
+            float: right;
+            color: $primary-color;
+            padding: 0px;
+            margin: 0px;
+            
+            position: absolute;
+            font-size: 2em;
+            padding: 15px;
+            background: #ecebeb;
+            border: 2px solid #cccbcb;
+
+            text-decoration: none;
+            bottom: 10px;
+            right: 10px;
+            :visited {
+                color: $primary-color;
+            }
+        }
     }
 }
 
@@ -148,6 +185,30 @@ main {
 
     section {
         margin: 15px;
+    }
+
+    .item-1 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        section {
+            margin: 5px auto;
+            width: 80%;
+            border: none;
+            hr {
+                margin-bottom: 15px;
+            }
+            
+            h1 {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            p {
+                margin-bottom: 5px;
+            }
+        }
     }
 
 
@@ -167,7 +228,7 @@ main {
             border-radius: 3px;
             line-height: 25px;
 
-            border-radius: 1px solid gray;
+           
             background-color: #ecebeb;
 
             img {
@@ -183,8 +244,17 @@ main {
     
             p {
                 padding: 5px 0 0 0;
-                font-size: 12px;
+                
                 overflow-wrap: break-word;
+
+                a {
+                    text-decoration: none;
+                    color: $primary-color;
+                    :visited {
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                }
             }
             .main-hr {
                 margin-bottom: 15px;
@@ -197,7 +267,27 @@ main {
 }
 
 
+#article {
+    margin: 20px 0;
+    background-color: #F9F9F9;
+    border: 1px solid #ecebeb;
+    padding-bottom: 50px;
+    article {
+        margin-top: 15px;
+        
+        padding: 15px;
+        width: 60%;
 
+        h2 {
+            padding: 15px;
+        }
+
+        section {
+            border: none;
+
+        }
+    }
+}
 // -------------- footer -------------- // 
 footer {
     //background-color: #f6f6f6;
@@ -222,6 +312,7 @@ footer {
             position: absolute;
             bottom: 0;
             left: 0;
+
         }
 
         a {
@@ -235,7 +326,7 @@ footer {
 
 
 // phone
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     header {
         padding: 10px;
@@ -270,6 +361,14 @@ footer {
         width: 50%;
     }
 
+    #shop {
+        section {
+            .description {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
     #contact {
         .item-2 {
             padding: 25px;
@@ -279,9 +378,44 @@ footer {
             section {
                 width: 75%;
                 margin-bottom: 40px;
+                
+            }   
+        }
+    }
+
+    #article {
+        display: flex;
+        justify-content: center;
+
+        article {
+            width: 100%;
+            border: none;
+            margin: 0 auto;
+            section {
+                width: 80%;
             }
         }
     }
+
+   
+
+    
+}
+
+figure {
+    padding: 15px;
+
+    font-size: 13px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+
+}
+
+.name {
+    padding: 10px;
 }
 
 
@@ -297,6 +431,33 @@ footer {
     nav {
         ul {
             width: 60%;
+            li {
+                margin-top: 10px;
+                margin-left: 25px;
+            }
+        }
+    }
+
+
+
+    #shop {
+        section {
+            .description {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+
+ul {
+
+    margin: 20px;
+    li {
+        
+        ul {
+            margin: 0px;
+            margin-left: 20px;
         }
     }
 }
